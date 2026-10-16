@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore Offers — VOUCHERA</title>
+<meta name="description" content="Browse live VOUCHERA cashback offers by category. Every offer shows its cashback rate, tracking time, confirmation window, eligibility and conditions before you shop.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://vouchera.in/offers.html">
+<meta name="theme-color" content="#1C1A3B">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VOUCHERA">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Explore Offers — VOUCHERA">
+<meta property="og:description" content="Browse live VOUCHERA cashback offers by category. Every offer shows its cashback rate, tracking time, confirmation window, eligibility and conditions before you shop.">
+<meta property="og:url" content="https://vouchera.in/offers.html">
+<meta property="og:image" content="https://vouchera.in/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="VOUCHERA — cashback and rewards, clearly stamped">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Explore Offers — VOUCHERA">
+<meta name="twitter:description" content="Browse live VOUCHERA cashback offers by category. Every offer shows its cashback rate, tracking time, confirmation window, eligibility and conditions before you shop.">
+<meta name="twitter:image" content="https://vouchera.in/assets/img/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Manrope:wght@400..800&amp;display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="VOUCHERA home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><g transform="rotate(-8 32 32)"><path fill="#2B2858" d="M13 14H51A7 7 0 0 1 58 21V27A5 5 0 0 0 58 37V43A7 7 0 0 1 51 50H13A7 7 0 0 1 6 43V37A5 5 0 0 0 6 27V21A7 7 0 0 1 13 14Z"/><path d="M45 18.5V45.5" stroke="#FBF7EF" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="2.4 2.8" stroke-linecap="round"/><path d="M15.5 23.5L25 40.5L37 21.5" fill="none" stroke="#F2A72E" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51.5" cy="32" r="2.6" fill="#E0553D"/></g></svg><span class="brand-word">VOUCHERA</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span class="bars"></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="offers.html" aria-current="page">Explore Offers</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li class="nav-cta"><a href="offers.html">Start saving</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Explore Offers</span></nav>
+      <span class="eyebrow">Explore offers</span>
+      <h1>Find a voucher, <em>read the terms</em>, then shop</h1>
+      <p class="lead">Every offer here is published only after the partner store confirms its cashback rate and conditions.</p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="offer-explorer">
+    <div class="wrap">
+      <div class="offers-toolbar">
+        <div class="search-field">
+          <label class="sr-only" for="offer-search">Search offers</label>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM20 20l-4-4"/></svg>
+          <input id="offer-search" type="search" placeholder="Search by store or offer" autocomplete="off" maxlength="60">
+        </div>
+        <div class="chips" id="offer-chips" role="group" aria-label="Filter by category"></div>
+      </div>
+      <p class="muted" id="offer-count" aria-live="polite"></p>
+      <div class="offer-grid" id="offer-grid"></div>
+      <div class="empty-state" id="offers-empty" hidden>
+        <div class="stamp-badge"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a3 3 0 0 0 0 6v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a3 3 0 0 0 0-6V7ZM14 6v2M14 11v2M14 16v2"/></svg></div>
+        <h2 id="offers-empty-title">Fresh offers are being stamped</h2>
+        <p>We add an offer only once the store has confirmed its rate and rules in writing — so what you see is always real. Try another category, or learn how cashback works while you wait.</p>
+        <div class="hero-actions actions-center">
+          <a class="btn btn-primary" href="how-it-works.html">How cashback works</a>
+          <a class="btn btn-ghost" href="contact.html?topic=partnership">Suggest a store</a>
+        </div>
+      </div>
+      <div class="disclosure mt-lg">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM12 11v5M12 8h.01"/></svg>
+        <p><strong>Affiliate disclosure:</strong> Links on this page are tracked partner links. When you buy through them, the store pays VOUCHERA a commission and we pass part of it to you as cashback. Prices at the store are unaffected.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="anatomy reveal" aria-hidden="true">
+        <div class="voucher-shadow">
+          <div class="voucher">
+            <div class="voucher-main">
+              <div class="anatomy-store">
+                <div class="anatomy-logo"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9M4 9h16M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0M5.5 11v9h13v-9M10 20v-5h4v5"/></svg></div>
+                <span class="label-chip"><i>1</i> Store &amp; category</span>
+              </div>
+              <span class="label-chip"><i>2</i> Offer headline</span>
+              <div class="anatomy-rows">
+                <div class="anatomy-row"><span class="label-chip"><i>3</i> Tracks</span><span class="label-chip"><i>4</i> Confirms</span></div>
+                <div class="anatomy-row"><div class="anatomy-bar"></div></div>
+                <div class="anatomy-row"><span class="label-chip"><i>5</i> Eligibility &amp; conditions</span></div>
+              </div>
+            </div>
+            <div class="voucher-stub">
+              <span class="label-chip"><i>6</i> Rate</span>
+              <span class="label-chip"><i>7</i> Shop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Reading a voucher</span>
+        <h2>What each part of an offer means</h2>
+        <ol class="anatomy-legend">
+          <li><span><b>Store &amp; category</b> — who you’re buying from.</span></li>
+          <li><span><b>Offer headline</b> — what the cashback applies to.</span></li>
+          <li><span><b>Tracks</b> — how soon the purchase usually appears as Tracked.</span></li>
+          <li><span><b>Confirms</b> — how long the store usually takes to approve it.</span></li>
+          <li><span><b>Eligibility &amp; conditions</b> — tap to open the full rules and exclusions.</span></li>
+          <li><span><b>Rate</b> — the cashback percentage or flat amount, and any cap.</span></li>
+          <li><span><b>Shop</b> — opens the store through your tracked VOUCHERA link.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="card reveal">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Before you click Shop</span>
+            <h2 class="mb-0">Five habits that help cashback track</h2>
+          </div>
+          <ul class="check-list">
+            <li><span class="tick"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7 10 17l-5-5"/></svg></span><div><b>Start from VOUCHERA every time</b><span>Click Shop on the voucher right before you buy.</span></div></li>
+            <li><span class="tick"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7 10 17l-5-5"/></svg></span><div><b>Finish in the same session</b><span>Complete checkout in the tab that opens.</span></div></li>
+            <li><span class="tick"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7 10 17l-5-5"/></svg></span><div><b>Allow cookies on the store</b><span>Ad blockers and strict privacy modes can stop tracking.</span></div></li>
+            <li><span class="tick"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7 10 17l-5-5"/></svg></span><div><b>Use only listed coupons</b><span>Outside coupon codes can cancel cashback.</span></div></li>
+            <li><span class="tick"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7 10 17l-5-5"/></svg></span><div><b>Keep your order ID</b><span>You’ll need it for a missing cashback claim.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="VOUCHERA home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><g transform="rotate(-8 32 32)"><path fill="#FBF7EF" d="M13 14H51A7 7 0 0 1 58 21V27A5 5 0 0 0 58 37V43A7 7 0 0 1 51 50H13A7 7 0 0 1 6 43V37A5 5 0 0 0 6 27V21A7 7 0 0 1 13 14Z"/><path d="M45 18.5V45.5" stroke="#1C1A3B" stroke-opacity=".35" stroke-width="1.6" stroke-dasharray="2.4 2.8" stroke-linecap="round"/><path d="M15.5 23.5L25 40.5L37 21.5" fill="none" stroke="#F2A72E" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51.5" cy="32" r="2.6" fill="#E0553D"/></g></svg><span class="brand-word">VOUCHERA</span></a>
+        <p>Indian cashback and rewards with every condition printed clearly — shop as usual, keep a little back.</p>
+        <ul class="footer-contact">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg><a href="mailto:support@vouchera.in">support@vouchera.in</a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21ZM12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg><span>Tronglaobi Tidim Road, Manipur, India</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul><li><a href="offers.html">Explore Offers</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="cashback-policy.html#withdrawals">Withdrawals</a></li></ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul><li><a href="about.html">About VOUCHERA</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html?topic=partnership">Partner with us</a></li></ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li><li><a href="cashback-policy.html">Cashback Policy</a></li><li><a href="refund-policy.html">Refund & Cancellation</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© <span id="year">2026</span> VOUCHERA. All rights reserved.</p>
+      <p>VOUCHERA earns a commission from partner stores and shares part of it with you as cashback.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/offers-data.js" defer></script>
+<script src="assets/js/offers.js" defer></script>
+</body>
+</html>
